@@ -53,7 +53,7 @@ The AgentForge ecosystem is designed as a dynamic marketplace that promotes effi
 
 ### 4. Economic Model & Optimization
 - **Agent Registry:** A central registry (e.g., DynamoDB) stores profiles for all available agents, including their capabilities, cost models (e.g., real-time, batch), and performance metrics.
-- **Centralized Ledger:** A transaction log records the full lifecycle of each task: the winning bid, the actual cost (e.g., LLM tokens, compute time), completion status, and quality scores.
+- **Centralized Ledger:** A transaction log records the full lifecycle of each task. For a detailed breakdown, see the [Database Schema documentation](./docs/database-schema.md).
 - **Feedback Loop:** This ledger data continuously updates the Agent Registry, creating an evolutionary pressure where more efficient and effective agents are more likely to win future tasks.
 
 ### 5. Code & Security
